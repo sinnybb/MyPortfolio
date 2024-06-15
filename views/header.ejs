@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to my page</h1>
+
+    <header>
+        <nav>
+            <a href="/">HOME</a> |
+            <a href="/profile">PROFILE</a> |
+            <a href="/project">PROJECT</a> |
+            <a href="/activity">ACTIVITY</a> |
+            <a href="/habit">HABIT</a> |
+            <a href="/inquiry">inquire</a> |
+            <a href="/inquiryList">inquiries view</a> |
+            <a href="/login">LOGIN</a>
+
+            <% if (user_id){ %>
+                Hello! <%=locals.user_id%>
+                <a href="/logout">logout</a>
+            <% }else{ %>
+                <a href="/login"></a>
+
+                <% } %>
+        </nav>
+    </header>
+    <hr>

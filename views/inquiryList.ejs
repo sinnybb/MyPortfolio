@@ -1,0 +1,31 @@
+<%- include('header.ejs') %>
+
+<h1>Requested Inquiries</h1>
+
+<table border= 1>
+    <tr>
+        <th>idx</th>
+        <th>name</th>
+        <th>phone</th>
+        <th>email</th>
+        <th>content</th>
+        <th>Registration Date</th>
+        <th>Action</th>
+    </tr>
+
+    <% lists.forEach(function(item) { %>  
+    <tr>
+        <td><%= item.idx %></td>
+        <td><%= item.name %></td>
+        <td><%= item.phone %></td>
+        <td><%= item.email %></td>
+        <td><%- item.content.replaceAll("\n", "<br>") %></td>
+        <td><%= item.regdate %></td>
+        <td> <a href="/inquiryDelete?idx=<%=item.idx%>" onclick="return confirm('Are you sure you want to DELETE it?')">Delete</a>
+        contact   <!-- 이메일 혹은 전화번호로 연락 가능한 폼 만들기 -->
+        </td>
+    </tr>
+    <% }) %>
+</table>
+
+<%- include('footer.ejs') %>

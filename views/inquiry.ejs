@@ -1,0 +1,15 @@
+<%- include('header.ejs') %>
+
+<form action="/contactProc" method="post">
+    <ul>
+        <li>Inquire sinnybb</li>
+        <li>Your name: <input type="text" name="name" class="inquiry" required></li>
+        <li>phone number: <input type="text" name="phone" class="inquiry" required></li>
+        <li>Your email: <input type="text" name="email" class="inquiry" required></li>
+        <li>Content</li>
+        <textarea name="content" cols="50" rows="10"></textarea>
+        <button>GO</button>
+    </ul>
+</form>
+
+<%- include('footer.ejs') %>
