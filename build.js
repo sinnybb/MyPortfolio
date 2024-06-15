@@ -2,7 +2,7 @@ const ejs = require('ejs');
 const fs = require('fs');
 const path = require('path');
 
-const srcDir = path.join(__dirname, 'view'); // view 폴더를 사용
+const srcDir = path.join(__dirname, 'views'); // view 폴더를 사용
 const distDir = path.join(__dirname, 'dist');
 
 if (!fs.existsSync(distDir)) {

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/MyPortfolio/" />
     <title>Document</title>
 </head>
 <body>
@@ -10,14 +11,14 @@
 
     <header>
         <nav>
-            <a href="/">HOME</a> |
-            <a href="/profile">PROFILE</a> |
-            <a href="/project">PROJECT</a> |
-            <a href="/activity">ACTIVITY</a> |
-            <a href="/habit">HABIT</a> |
-            <a href="/inquiry">inquire</a> |
-            <a href="/inquiryList">inquiries view</a> |
-            <a href="/login">LOGIN</a>
+            <a href="/MyPortfolio/">HOME</a> |
+            <a href="/MyPortfolio/profile">PROFILE</a> |
+            <a href="/MyPortfolio/project">PROJECT</a> |
+            <a href="/MyPortfolio/activity">ACTIVITY</a> |
+            <a href="/MyPortfolio/habit">HABIT</a> |
+            <a href="/MyPortfolio/inquiry">inquire</a> |
+            <a href="/MyPortfolio/inquiryList">inquiries view</a> |
+            <a href="/MyPortfolio/login">LOGIN</a>
 
             <% if (user_id){ %>
                 Hello! <%=locals.user_id%>

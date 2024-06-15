@@ -20,7 +20,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d public"
   },
   "homepage": "https://sinnybb.github.io/MyPortfolio/"
 }
